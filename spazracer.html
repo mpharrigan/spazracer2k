@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spazracer 2000</title>
+  <style>
+    body{
+      background-color:#eeeeee;
+      text-align:center;
+    }
+    #control{
+      position:absolute;
+      top:10px;
+      left:100px;
+      width:400px;
+      text-align:left;
+      z-index:100;
+      display:block;
+    }
+    #info {
+      position:absolute;
+      top: 10px;
+      width:100%;
+      text-align: center;
+      z-index:100;
+      display:block;
+    }
+    #canvas{
+      margin:auto;
+    }
+    #win{
+      position:absolute;;
+      top: 200px;
+      width:100%;
+      text-align: center;
+      z-index:100;
+      display:none;
+      font-size:72pt;
+      font-weight:bold;
+      color: red;
+      background-color:lightgrey;
+    }
+    body{
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div id="control">
+  <h2 id="mute-info">Press M to un-mute</h2>
+  <h2 id="loading-info">Music loading ... </h2>
+</div>
+<div id="info">
+  <h2 id="score"></h2>
+  <h2 id="enemies_left"></h2>
+  <h2 id="powerup_left"></h2>
+</div>
+<div id="win">
+  YOU WIN!
+</div>
+
+<div id="canvas">
+</div>
+
+
+
+<script src="js/three.min.js"></script>
+<script src="spazracer.js"></script>
+</body>
+</html>
